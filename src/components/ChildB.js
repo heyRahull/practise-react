@@ -1,11 +1,11 @@
 import React from "react";
 import ChildC from "./ChildC";
 
-const ChildB = ({ data }) => {
+const ChildB = () => {
   return (
     <div>
       ChildB
-      <ChildC data={data} />
+      <ChildC />
     </div>
   );
 };

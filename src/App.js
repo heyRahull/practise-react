@@ -1,13 +1,13 @@
 import "./App.css";
-import TodoCheckbox from "./1-TodoCheckbox";
+import TodoCheckbox from "./components/1-TodoCheckbox";
 import React from "react";
-import Parent from "./Parent";
-import Practise2 from "./Practise2";
+import Parent from "./components/Parent";
+import Practise2 from "./components/Practise2";
 
 function App() {
   return (
     <div className="App">
-      <Practise2 />
+      <Parent />
     </div>
   );
 }
