@@ -1,11 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
 import TodoCheckbox from "./1-TodoCheckbox";
+import React from "react";
+import Parent from "./Parent";
 
 function App() {
   return (
     <div className="App">
-      <TodoCheckbox />
+      <Parent />
     </div>
   );
 }
