@@ -1,23 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { data, data1 } from "./Parent";
 
 const ChildC = () => {
+  const name = useContext(data);
+  const technology = useContext(data1);
   return (
-    <data.Consumer>
-      {(name) => {
-        return (
-          <data1.Consumer>
-            {(tech) => {
-              return (
-                <h1>
-                  My name is {name} and tech is {tech}
-                </h1>
-              );
-            }}
-          </data1.Consumer>
-        );
-      }}
-    </data.Consumer>
+    <h1>
+      My name is {name} and we are learning {technology}
+    </h1>
   );
 };
 
