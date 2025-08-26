@@ -6,14 +6,12 @@ import React from "react";
 import { ThemeProvider } from "./components/ThemeContext.js";
 import ThemeSwitcher from "./components/ThemeSwitcher.js";
 import Greet from "./components/Greet.js";
+import Greetings from "./components/Greetings.jsx";
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider>
-        <ThemeSwitcher />
-        {/* <br /> <Greet /> */}
-      </ThemeProvider>
+      <Greetings name="Rahul"/>
     </div>
   );
 }
